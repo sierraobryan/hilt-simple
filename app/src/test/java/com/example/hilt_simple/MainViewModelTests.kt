@@ -66,28 +66,4 @@ class MainViewModelTests {
         assertTrue(viewModel.commits.value?.size == 1)
     }
 
-//    @Test
-//    fun testValidateCode_Success_LoginFailure() {
-//        coEvery {
-//            authInteractorMockK.registerConfirm(any(), any())
-//        } returns AuthInteractor.LoginResult.Success
-//
-//        coEvery {
-//            authInteractorMockK.login(any(), any())
-//        } returns AuthInteractor.LoginResult.Fail("failed")
-//
-//        viewModel.code.postValue("123456")
-//
-//        verify {
-//            analyticsServiceMockK.logAccountVerified("SUCCESS")
-//        }
-//        coVerify {
-//            authInteractorMockK.login(any(), any())
-//        }
-//
-//        coVerify(exactly = 0) {
-//            userRepository.updateMarketing(any())
-//        }
-//    }
-
 }

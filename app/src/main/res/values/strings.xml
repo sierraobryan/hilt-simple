@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">koin-simple</string>
+    <string name="app_name">hilt-simple</string>
 
     <string name="author_format">Author: %s</string>
     <string name="version_format">Version: %s</string>
