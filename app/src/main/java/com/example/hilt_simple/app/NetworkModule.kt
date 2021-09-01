@@ -15,6 +15,11 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object NetworkModule {
 
+//    @Binds
+//    abstract fun bindAnalyticsService(
+//        analyticsServiceImpl: AnalyticsServiceImpl
+//    ): AnalyticsService
+
     @Provides
     @Singleton
     fun provideOkHttpClient(): OkHttpClient {

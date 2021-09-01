@@ -23,7 +23,10 @@ class MainFragment : Fragment() {
         fun newInstance() = MainFragment()
     }
 
+    // scoped to whatever you are calling it on
     private val viewModel: MainViewModel by viewModels()
+    // like Koin's sharedViewModel
+   // private val viewModel: MainViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
