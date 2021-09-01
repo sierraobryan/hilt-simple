@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.example.hilt_simple.data.MainDatabase
 import com.example.hilt_simple.data.models.CommitDataDao
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

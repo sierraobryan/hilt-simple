@@ -1,16 +1,17 @@
 package com.example.hilt_simple.ui.main
 
-import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.hilt_simple.data.MainRepository
 import com.example.hilt_simple.data.models.Commit
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-
-class MainViewModel @ViewModelInject constructor(private val mainRepository: MainRepository) : ViewModel() {
+@HiltViewModel
+class MainViewModel @Inject constructor(private val mainRepository: MainRepository) : ViewModel() {
 
     val username: MutableLiveData<String> = MutableLiveData("sierraobryan")
     val repoName: MutableLiveData<String> = MutableLiveData("hackerNews")
